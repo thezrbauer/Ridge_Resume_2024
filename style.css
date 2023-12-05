@@ -1,0 +1,246 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+ :root {
+
+
+    --primary: #646485;
+    --secondary: #EBEBEB;
+    --tertiary:#E5971F;
+    --quaternary:#FFFFFF;
+     --quinary:#AFB1BD;
+     --senary:#3E3E3E;
+} 
+
+
+
+main {
+    margin:auto;
+	/* Reflect the paper width in the screen rendering (must match size from @page rule) */
+	width: 21cm;
+	/* Reflect the paper height in the screen rendering (must match size from @page rule) */
+	min-height: 29.7cm;
+    max-height: 29.7cm;
+	/* Reflect the actual page margin/padding on paper in the screen rendering (must match margin from @page rule) */
+    
+
+}
+
+
+main > div {
+    font-size: .9rem; display:grid;
+} 
+
+
+h1, h2, h3, h4, h5 {
+    margin:0;
+    padding:0;
+}
+
+.intro {
+
+    height:auto;
+}
+
+.intro > h1, h2 {
+    margin:6px;
+}
+  
+.cover {
+    background-color: var(--primary);
+    padding:5px 10px;
+    color:#E9EBFB;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+.contact {
+    background-color:#E5971F;
+    height:auto;
+    padding:.5rem 1rem;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+.contact > ul {
+    list-style:none;
+    display:grid;
+    grid-template-columns: 5.1cm 5.1cm 5.1cm 5.1cm;
+    grid-row: auto auto;
+    padding:0;
+    margin:0;
+    grid-row-gap: 10px;
+    margin:auto;
+
+}
+
+.contact > ul > li {
+    font-size:16px;
+    display:flex;
+}
+
+
+
+.contact > ul > li > p{
+    margin:auto;
+  
+ }
+
+
+ .body {
+    display:grid;
+    grid-template-columns: 65% 35%;
+ }
+
+
+
+.work_experience {
+    padding:10px;
+}
+
+.title {
+    display:flex;
+    font-size:16px;
+   
+}
+
+.title > h2 {
+    margin:auto 10px;
+    padding:auto;
+
+}
+
+
+.iconWrapper{
+	display: table;
+	width: 45px; height: 45px; 
+	background-color: var(--secondary);
+	border-radius: 999px;
+}
+.iconWrapper i {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.card {
+    font-size:12px;
+    margin-top:15px;  
+ }
+
+
+ .card > h2 {
+    margin:0;
+    padding: 2px auto;
+ }
+
+
+.card > h4, h5 {
+    color:#E5971F
+}
+
+ .achievements {
+    padding:5px 0px;
+   
+ }
+
+ .achievements > h4 {
+    color:black;
+ }
+
+ .skills {
+    background-color: var(--secondary);
+    height: 200px;
+    margin-top:10px;
+    padding:10px;
+    height:23.4cm;
+    border-radius: 5px;
+ }
+
+
+
+ 
+ .iconWrapper2{
+	display: table;
+	width: 35px; height: 35px; 
+	background-color: var(--primary);
+	border-radius: 999px;
+}
+.iconWrapper2 i {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.title_2 {
+    display:flex;
+    font-size:16px;
+   
+}
+
+.title_2 > h2 {
+    margin:auto 10px;
+    padding:auto;
+
+}
+
+
+
+.box{
+    background-color: var(--quaternary);
+    padding:8px;
+    border-radius:2px;
+    font-size:12px;
+    color:black;
+    margin-left:4px;
+}
+
+
+.expbox {
+    margin:10px;
+}
+.ex1, .ex2, .ex3 {
+   
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content:flex-start; 
+    padding:3px;
+    gap:5px;
+
+}
+
+.interests {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content:flex-start; 
+    gap:20px;
+}
+
+.interests > div {
+    display:flex;
+    border-radius:2px;
+    font-size:20px;
+    width:8rem;
+   
+}
+
+.interests > div > span {
+    margin-top:auto;
+    margin-bottom:auto;
+
+}
+
+.interests > div > p {
+   
+    margin:10px;
+}
+
+.interests > div> span > i {
+    color:var(--tertiary);
+    margin-right:10px;
+}
