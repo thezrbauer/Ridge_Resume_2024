@@ -7,10 +7,10 @@
  :root {
 
 
-    --primary: #646485;
+    --primary: #757575;
     --secondary: #EBEBEB;
-    --tertiary:#E5971F;
-    --quaternary:#FFFFFF;
+    --tertiary:#df8b96;
+    --quaternary:#ffffff;
      --quinary:#AFB1BD;
      --senary:#3E3E3E;
 } 
@@ -25,7 +25,7 @@ main {
 	min-height: 29.7cm;
     max-height: 29.7cm;
 	/* Reflect the actual page margin/padding on paper in the screen rendering (must match margin from @page rule) */
-    
+    color:var(--senary)
 
 }
 
@@ -35,10 +35,12 @@ main > div {
 } 
 
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, ul, li {
     margin:0;
     padding:0;
+  
 }
+
 
 .intro {
 
@@ -51,45 +53,46 @@ h1, h2, h3, h4, h5 {
   
 .cover {
     background-color: var(--primary);
-    padding:5px 10px;
-    color:#E9EBFB;
+    padding:10px;
+    color:#ffffff;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-
+    font-size:14px;
+    line-height:18px;
 }
 
-.contact {
-    background-color:#E5971F;
+.contact{
+    background-color: var(--tertiary);
     height:auto;
-    padding:.5rem 1rem;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
 }
-
 
 .contact > ul {
     list-style:none;
-    display:grid;
-    grid-template-columns: 5.1cm 5.1cm 5.1cm 5.1cm;
-    grid-row: auto auto;
-    padding:0;
-    margin:0;
-    grid-row-gap: 10px;
+    display:flex;
     margin:auto;
-
+    padding: 5px 4px 5px 2px;
+   
 }
 
 .contact > ul > li {
     font-size:16px;
     display:flex;
+
 }
 
+.contact > ul > li > i {
+   margin:auto;
 
+ }
 
 .contact > ul > li > p{
-    margin:auto;
-  
- }
+   margin:auto;
+   padding-left:20px;
+   padding-right:30px;
+ 
+}
 
 
  .body {
@@ -106,7 +109,7 @@ h1, h2, h3, h4, h5 {
 .title {
     display:flex;
     font-size:16px;
-   
+
 }
 
 .title > h2 {
@@ -139,32 +142,35 @@ h1, h2, h3, h4, h5 {
     padding: 2px auto;
  }
 
-
-.card > h4, h5 {
-    color:#E5971F
+.accent_box{
+    display:flex;
+    color:var(--tertiary);
+    justify-content: space-between;
+    margin:5px auto;
+    font-size:12px;
 }
 
- .achievements {
-    padding:5px 0px;
-   
- }
+.time_in {
+    padding-top: 5px;
+}
 
- .achievements > h4 {
-    color:black;
- }
+.listdiv {
+padding-left:15px;
+font-size: 14px;
+}
+
 
  .skills {
     background-color: var(--secondary);
     height: 200px;
     margin-top:10px;
-    padding:10px;
+    padding:5px;
     height:23.4cm;
     border-radius: 5px;
  }
 
 
 
- 
  .iconWrapper2{
 	display: table;
 	width: 35px; height: 35px; 
@@ -175,12 +181,14 @@ h1, h2, h3, h4, h5 {
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
+    color:var(--quaternary);
 }
 
 .title_2 {
     display:flex;
     font-size:16px;
-   
+    padding-left:10px ;
+    padding-top:5px ;
 }
 
 .title_2 > h2 {
@@ -209,24 +217,42 @@ h1, h2, h3, h4, h5 {
     display: grid;
     grid-template-columns: auto auto;
     justify-content:flex-start; 
-    padding:3px;
+    padding:5px;
     gap:5px;
 
+}
+
+
+.techSkills {
+    margin:1rem;
+}
+
+
+.education {
+    margin:1rem;
+}
+
+.time_in {
+    color:var(--tertiary)
+}
+
+.education > h5 {
+    padding-top:5px;
 }
 
 .interests {
     display: grid;
     grid-template-columns: auto auto;
     justify-content:flex-start; 
-    gap:20px;
+    gap:15px;
+    margin-top:10px;
 }
 
 .interests > div {
     display:flex;
-    border-radius:2px;
-    font-size:20px;
-    width:8rem;
-   
+    font-size:18px;
+    margin-left:1rem;
+  
 }
 
 .interests > div > span {
@@ -236,11 +262,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .interests > div > p {
-   
     margin:10px;
 }
 
 .interests > div> span > i {
     color:var(--tertiary);
-    margin-right:10px;
 }
