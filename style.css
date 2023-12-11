@@ -5,14 +5,14 @@
 }
 
  :root {
-
-
-    --primary: #757575;
+ /* charcoal   #36454F */
+/* gunmetal #818589	; */
+    --primary: #36454F;
     --secondary: #EBEBEB;
-    --tertiary:#df8b96;
+    --tertiary:#D58A94;
     --quaternary:#ffffff;
      --quinary:#AFB1BD;
-     --senary:#3E3E3E;
+     --senary:black;
 } 
 
 
@@ -26,7 +26,7 @@ main {
     max-height: 29.7cm;
 	/* Reflect the actual page margin/padding on paper in the screen rendering (must match margin from @page rule) */
     color:var(--senary);
-   
+
 }
 
 
@@ -41,32 +41,41 @@ h1, h2, h3, h4, h5, ul, li {
   
 }
 
+h1 {
+    font-size:36px;
+}
 
 .intro {
 
     height:auto;
 }
 
-.intro > h1, h2 {
-    margin:6px;
+.intro > h1{
+    margin:6px 6px 0px;
+}
+.intro > h2{
+    margin:0px 6px 6px;
 }
   
 .cover {
     background-color: var(--primary);
-    padding:10px;
+    padding:18px;
     color:#ffffff;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-radius: 5px;
     font-size:16px;
-    line-height:18px;
+    line-height:20px;
+}
+
+.cover > p {
+    margin:5px 5px 0px 5px;
+    text-indent: 50px;
 }
 
 .contact{
     background-color: var(--tertiary);
     height:auto;
-    border-bottom-left-radius:5px;
-    border-bottom-right-radius:5px;
-
+    border-radius: 5px;
+    margin-top:4px;
 }
 
 .contact > ul {
@@ -109,7 +118,8 @@ h1, h2, h3, h4, h5, ul, li {
 
 .title {
     display:flex;
-    font-size:16px;
+    font-size:20px;
+   
 }
 
 .title > h2 {
@@ -135,14 +145,22 @@ h1, h2, h3, h4, h5, ul, li {
 }
 
 .card {
-    font-size:12x;
     margin-top:15px;  
  }
 
  .card > h2 {
     margin:0;
-    padding: 2px auto;
+    font-size:20px;
+    
  }
+
+ .card > h3 {
+    margin: 1px auto;
+    font-size:16px;
+    /* text-decoration: underline; */
+ }
+
+
 
 .accent_box{
     display:flex;
@@ -154,18 +172,26 @@ h1, h2, h3, h4, h5, ul, li {
 
 .time_in {
     padding-top: 5px;
+    font-size:13p
 }
 
 .listdiv {
-padding-left:15px;
-font-size: 16px;
+    padding-left:15px;
+  
 
 }
+
+.listdiv > ul > li {
+    font-size:14px;
+    list-style-type:circle;
+    margin:2px auto;
+}
+
 
 .skills {
     background-color: var(--secondary);
     height: 200px;
-    margin-top:10px;
+    margin-top:4px;
     padding:5px;
     height:23cm;
     border-radius: 5px;
@@ -218,7 +244,7 @@ font-size: 16px;
     display: grid;
     grid-template-columns: auto auto;
     justify-content:flex-start; 
-    padding:5px;
+    padding:6px;
     gap:5px;
 }
 
@@ -228,6 +254,7 @@ font-size: 16px;
 
 .techSkills > P {
     font-size:12px;
+    text-indent: 15px;
 }
 
 .education {
@@ -264,7 +291,7 @@ font-size: 16px;
 }
 
 .interests > div > p {
-    margin:10px;
+    margin:5px 8px;
 }
 
 .interests > div> span > i {
